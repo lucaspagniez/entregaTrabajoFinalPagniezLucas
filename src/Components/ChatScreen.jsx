@@ -2,7 +2,7 @@ import React from 'react'
 import { useState } from 'react'
 import { useParams } from 'react-router-dom'
 import { contacts } from '../Data/Contacts'
-import Message from './message'
+import Message from './Message'
 import './ChatScreen.css'
 
 function ChatScreen() {
