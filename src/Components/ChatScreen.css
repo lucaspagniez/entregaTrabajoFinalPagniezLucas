@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: lightpink;
+    font-family: 'Arial', sans-serif;
+}
+.chat-screen{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    background-color: #f0f0f0;
+    position: relative;
+}
+.chat-header{
+    display:flex;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #25d366 ;
+    border-bottom: 1px solid #858585;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+}
+.chat-photo{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-right: 15px;
+    object-fit: cover;
+}
+
+
+
+.contact-name{
+    background-color: #25d366;
+    flex-grow:1 ;
+    font-weight: bold;
+    font-size: 16px;
+    margin-left: 20px ;
+}
+.call-button{
+    border: none;
+    background-color: #25d366;
+    border-radius: 50%;
+    padding: 8px;
+    color: #12741f;
+    font-size: 25px;
+    cursor: pointer;
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.call-button svg{
+    background-color:#25d366;
+
+
+}
+
+
+
+.messages{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+    flex:1;
+    margin-top: 110px;
+    margin-bottom:60px ;
+    padding-bottom: 70px;
+}
+
+.input-zone{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+    background-color: #f0f0f0;
+    position: fixed;
+    bottom: 0;
+    z-index: 10;
+    width: 100%;
+    height:60px;
+}
+
+.input-area{
+    flex: 1;
+    padding: 10px 15px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    outline: none;
+    margin-right: 10px;
+    background-color: #fff;
+}
+
+.send-button{
+    background-color: #25d366;
+    color:#ddd;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+
+}
+
+.input-zone button:hover{
+    background-color: #20ba59;
+}

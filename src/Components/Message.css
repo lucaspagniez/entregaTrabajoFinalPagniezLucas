@@ -1,0 +1,81 @@
+
+.message-bubble {
+    max-width: 60%;
+    margin: 10px;
+    padding: 10px 14px 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    word-wrap: break-word;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+    overflow: visible;
+}
+
+
+.sent {
+    align-self: flex-end;
+    background-color: #dcf8c6;
+}
+
+
+.received {
+    align-self: flex-start;
+    background-color: #ffffff; 
+}
+
+.message-content .sent{
+    display: flex;
+    flex-direction: column;
+    background-color: #dcf8c6;
+}
+
+.message-content .received{
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+}
+
+.message-text {
+    margin: 0;
+    font-size: 15px;
+    word-break: break-word;
+}
+
+
+.message-footer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 11px;
+    color: #494949;
+    margin-top: 5px;
+    gap: 5px;
+    flex-wrap: nowrap;
+    overflow: hidden;
+}
+
+.delete-icon{
+    cursor: pointer;
+    color: #383838;
+}
+
+.message-time {
+    font-size: 11px;
+}
+
+.delete-icon {
+    cursor: pointer;
+    font-size: 14px;
+}
+.status-icon-sent{
+    font-size: 12px;
+    margin-left: 5px;
+    color: gray;
+}
+
+.status-icon-seen{
+    font-size: 12px;
+    margin-left: 5px;
+    color: rgb(52, 145, 252);
+}

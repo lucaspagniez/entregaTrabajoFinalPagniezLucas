@@ -3,7 +3,6 @@ import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import HomeScreen from './Components/HomeScreen';
 import ChatScreen from './Components/ChatScreen';
-import Contactetail from './Components/ContactDetail';
 import ContactDetail from './Components/ContactDetail';
 
 
