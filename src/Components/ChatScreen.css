@@ -1,8 +1,16 @@
+:root{
+    --color-fondo-general: #ECE5DD;
+    --color-fondo-chat-activo: #DCF8C6;
+    --color-texto-principal: #202C33;
+    --color-texto-secundario: #667781;
+    --color-header: #075E54;
+    --color-input-fondo: #FFFFFF;
+    --color-iconos: #25D366;
+}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: lightpink;
     font-family: 'Arial', sans-serif;
 }
 .chat-screen{
@@ -10,58 +18,109 @@
     flex-direction: column;
     height: 100vh;
     width: 100%;
-    background-color: #f0f0f0;
     position: relative;
 }
-.chat-header{
-    display:flex;
+.chat-header {
+    display: flex;
     align-items: center;
     padding: 20px 50px;
-    background-color: #25d366 ;
+    background-color: var(--color-header);
+    gap: 12px;
     border-bottom: 1px solid #858585;
     width: 100%;
     position: fixed;
     z-index: 10;
-    top: 0;
+    top:0;
+    height: auto;
 }
-.chat-photo{
+.back-icon-chatScreen {
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    margin-right: 10px;
+    background-color: var(--color-header);
+}
+
+.chat-header-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+    flex-grow: 1; 
+    cursor: pointer;
+    background-color: var(--color-header);
+}
+
+.chat-photo {
     width: 70px;
     height: 70px;
     border-radius: 50%;
-    margin-right: 15px;
     object-fit: cover;
+    margin-right: 15px; 
 }
 
-
-
-.contact-name{
-    background-color: #25d366;
-    flex-grow:1 ;
-    font-weight: bold;
-    font-size: 16px;
-    margin-left: 20px ;
-}
-.call-button{
-    border: none;
-    background-color: #25d366;
-    border-radius: 50%;
-    padding: 8px;
-    color: #12741f;
-    font-size: 25px;
-    cursor: pointer;
-    margin-left: auto;
+.name-lastConnection-container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
-
+    align-items: start;
+    background-color: var(--color-header);
+    row-gap: 5px;
 }
+
+.contact-name {
+    font-weight: bold;
+    font-size: 18px;
+    background-color: var(--color-header);
+    color: white;
+    flex-grow:1;
+}
+
+.contactLastConnection {
+    font-size: 14px;
+    font-weight: 400 ;
+    opacity: 0.8;
+    background-color: var(--color-header);
+    color: white;
+    cursor: default;
+}
+
+.call-button {
+    background: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+    padding-right:10px ;
+}
+
 .call-button svg{
-    background-color:#25d366;
-
-
+    background-color: var(--color-header);
 }
 
+.video-button{
+    background: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+}
 
+.video-button svg{
+    background-color: var(--color-header);
+}
+.more-button{
+    background: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+    padding-left:10px ;
+}
+
+.more-button svg{
+    background-color:var(--color-header);
+}
 
 .messages{
     display: flex;
@@ -71,6 +130,7 @@
     margin-top: 110px;
     margin-bottom:60px ;
     padding-bottom: 70px;
+    background-color: var(--color-fondo-general);
 }
 
 .input-zone{
@@ -78,7 +138,7 @@
     align-items: center;
     padding: 10px;
     border-top: 1px solid #ddd;
-    background-color: #f0f0f0;
+    background-color: rgb(238, 238, 238);
     position: fixed;
     bottom: 0;
     z-index: 10;
@@ -98,8 +158,8 @@
 }
 
 .send-button{
-    background-color: #25d366;
-    color:#ddd;
+    background-color: var(--color-iconos);
+    color: #ffffff;
     border: none;
     padding: 10px 15px;
     border-radius: 50px;
@@ -108,7 +168,47 @@
     transition: background-color 0.3s ease;
 
 }
+.send-button svg{
+    background-color: var(--color-iconos);
+}
 
 .input-zone button:hover{
-    background-color: #20ba59;
+    background-color: var(--color-iconos);
+}
+
+@media screen and (max-width: 768px) {
+    .chat-header{
+        padding: 16px;
+    }
+    .chat-photo{
+        width: 48px;
+        height: 48px;
+    }
+    .contact-name{
+        font-size:16px ;
+    }
+    .contactLastConnection{
+        font-size: 12px;
+    }
+    .call-button{
+        padding-right: 0px;
+    }
+    .more-button{
+        padding-left:0px ;
+    }
+    .messages{
+        margin-top:80px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .call-button{
+        display: none;
+    }
+    .video-button{
+        display: none;
+    }
+    .contactLastConnection{
+        display: none;
+    }
 }

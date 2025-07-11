@@ -1,6 +1,142 @@
-*{
-    margin: 0 ;
+:root {
+    --color-fondo-general: #ECE5DD;
+    --color-fondo-chat-activo: #DCF8C6;
+    --color-texto-principal: #202C33;
+    --color-texto-secundario: #667781;
+    --color-header: #075E54;
+    --color-input-fondo: #FFFFFF;
+    --color-iconos: #25D366;
+}
+
+* {
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: aquamarine;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: var(--color-fondo-general);
+    overflow-x: hidden;
+}
+
+.homeScreen {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 40px;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--color-header);
+    margin-bottom: 20px;
+}
+
+.contacts-title {
+    font-size: 24px;
+    font-weight: bold;
+    background-color: var(--color-header);
+    color: var(--color-input-fondo);
+    display: flex;
+    align-items: center;
+}
+
+.contacts-title svg {
+    background-color: var(--color-header);
+    margin-right: 8px;
+}
+
+.search-container {
+    position: relative;
+    width: 90%;
+    margin-top: 20px;
+    background-color: var(--color-header);
+}
+
+.search-icon {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+    color: var(--color-iconos);
+    font-size: 14px;
+    background-color: var(--color-input-fondo);
+    pointer-events: none;
+}
+
+.search-contacts {
+    width: 100%;
+    padding: 10px 12px 10px 36px;
+    border-radius: 8px;
+    font-size: 14px;
+    border: none;
+    background-color: var(--color-input-fondo);
+    color: black;
+}
+
+.contact-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    margin: 0 25px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    background-color: #fff;
+    border-radius: 12px;
+    margin-bottom: 10px;
+    transition: background-color 0.2s ease;
+}
+
+.contact-item:hover {
+    background-color: #f0f0f0;
+}
+
+.contact-photo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 12px;
+}
+
+.contact-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.contact-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-name-homeScreen {
+    font-size: 18px;
+    font-weight: bold;
+    color: #111;
+}
+
+.contact-time-homeScreen {
+    font-size: 12px;
+    color: var(--color-texto-secundario);
+    white-space: nowrap;
+    margin-left: 8px;
+}
+
+.contact-message-homeScreen {
+    font-size: 14px;
+    color: var(--color-texto-secundario);
+    margin-top: 4px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }

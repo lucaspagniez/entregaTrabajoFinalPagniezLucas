@@ -17,19 +17,22 @@ export const contacts = [
         { id: 2, text: 'Hola, yo estoy bien, haceindo el trabajo final de FrontEnd', sent: true, time:'19:01', seenStatus:'seen' },
         { id: 3, text: '¿Y vos?', sent: true, time:'19:02', seenStatus:'seen' },
         { id: 4, text: 'Yo también, es un desafío bastante grande', sent: false, time:'19:03' },
-        ]
+        ],
+        lastConnection: 'Última conexión: hoy a las 19:03',
+        phone: '+54 987654321',
     },
 
     { 
         id: 2,
         name: 'Morena',
-        photo: 'https://cdn.milenio.com/uploads/media/2022/07/17/pinky-gomezpalatina-simple-vista-honor.jpg',
+        photo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMTgEEQ_W5J7F7xWrwMzUejcdZCpoMK0W1eA&s',
         messages:[
             { id: 1, text: 'Holaa como estas?, seguiste practicando con los tatuajes?', sent: false, time:'18:00' },
             { id: 2, text: 'Sii, es un lindo proyecto para hacer juntos 💕', sent: true, time:'18:01', seenStatus:'seen' },
-            { id: 3, text: 'la verdad que si mi amor, me gustaa', sent: false, time:'18:02'},
+            { id: 3, text: 'la verdad que si mi amor, me gustaa 😍', sent: false, time:'18:02'},
         ],
-
+        lastConnection: 'Última conexión: hoy a las 18:02',
+        phone: '+54 123456789',
     },
 
     { 
@@ -41,7 +44,8 @@ export const contacts = [
             { id: 2, text: 'Estoy bien, estoy haciendo el trabajo final de FrontEnd y la verdad que esta muy dificil', sent: true, time:'17:01', seenStatus:'seen' },
             { id: 3, text: 'Entiendo, es un desafío interesante, pero con dedicación vas a lograrlo', sent: false, time:'17:02' },
         ],
-
+        lastConnection: 'Última conexión: hoy a las 17:02',
+        phone: '+54 123455555',
     },
 
     { 
@@ -53,6 +57,8 @@ export const contacts = [
             { id: 2, text: 'Dificilisimo la verdad, aprobame porfavor 😔', sent: true, time:'13:01', seenStatus:'seen' },
             { id: 3, text: 'Jajaja, hace lo posible que capaz zafas', sent: false, time:'13:02' },
         ],
+        lastConnection: 'Última conexión: hoy a las 13:02',
+        phone: '+54 233444455',
     },
 
     { 
@@ -65,6 +71,8 @@ export const contacts = [
             { id: 3, text: 'Todo bien, solo que estoy preocupado por el trabajo final de FrontEnd', sent: true, time:'10:02', seenStatus:'seen' },
             { id: 4, text: 'No te preocupes, con esfuerzo y dedicación lo vas a lograr', sent: false, time:'10:03' },
         ],
+        lastConnection: 'Última conexión: hoy a las 10:03',
+        phone: '+54 918273645',
     },
 
 

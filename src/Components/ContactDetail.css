@@ -1,0 +1,86 @@
+:root {
+    --color-fondo-general: #ECE5DD;
+    --color-fondo-chat-activo: #DCF8C6;
+    --color-texto-principal: #202C33;
+    --color-texto-secundario: #667781;
+    --color-header: #075E54;
+    --color-input-fondo: #FFFFFF;
+    --color-iconos: #25D366;
+}
+.contact-detail {
+    padding: 20px;
+    background-color: var(--color-fondo-general);
+    min-height: 100vh;
+}
+
+.contact-detail-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.back-icon {
+    cursor: pointer;
+    font-size: 22px;
+    color: var(--color-header);
+}
+
+.contact-detail-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.contact-detail-photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 2px solid var(--color-header);
+}
+
+.contact-detail-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-detail-action {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 20px;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 0 5px rgb(0 0 0 / 0.1);
+    cursor: pointer;
+    font-weight: 600;
+    color: var(--color-texto-principal);
+    transition: background-color 0.2s ease;
+}
+
+.contact-detail-action:hover {
+    background-color: var(--color-fondo-chat-activo);
+}
+
+.contact-detail-info-phone {
+    padding-top: 10px;
+    font-size: 15px;
+    cursor: pointer;
+}
+.contact-detail-info-phone:hover {
+    color: var(--color-header);
+}
+
+.contact-icon {
+    font-size: 20px;
+    color: var(--color-iconos);
+    background-color: white;
+}
+
+.action-text{
+    background-color: white;
+}
