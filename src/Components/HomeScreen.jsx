@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { contacts } from '../Data/Contacts';
 import { Link } from 'react-router-dom';
 import './HomeScreen.css';
-import { FaSearch, FaWhatsapp} from 'react-icons/fa';
+import { FaSearch, FaWhatsapp, FaUsers, FaPhone, FaUserPlus} from 'react-icons/fa';
 
 
 function HomeScreen() {
@@ -48,6 +48,32 @@ const filteredContacts = contacts.filter(contact =>
                     );
                 })}
                 </ul>
+            </div>
+            <div className='footer-container'>
+                <div className='footer-button-container'>
+                <button className='footer-button'>
+                    <FaUserPlus/>
+                    <p className='footer-text'>Contactos</p>
+                </button>
+                </div>
+                <div className='footer-button-container'>
+                <button className='footer-button'>
+                    <FaWhatsapp/>
+                    <p className='footer-text'>Novedades</p>
+                </button>
+                </div>
+                <div className='footer-button-container'>
+                <button className='footer-button'>
+                    <FaUsers/>
+                    <p className='footer-text'>Comunidades</p>
+                </button>
+                </div>
+                <div className='footer-button-container'>
+                    <button className='footer-button'>                        
+                        <FaPhone/>
+                    <p className='footer-text'>Llamadas</p>
+                </button>
+                </div>
             </div>
     </div>
     );
